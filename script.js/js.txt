@@ -1,0 +1,19 @@
+function openPopup(type) {
+    const popup = document.getElementById("popup");
+    const popupText = document.getElementById("popup-text");
+
+    const content = {
+        web: "تفاصيل عن إنشاء المواقع. <br><a href='#'>لإنشاء المواقع اضغط هنا</a>",
+        platform: "تفاصيل عن تزود المنصات. <br><a href='#'>لتزود المنصات اضغط هنا</a>",
+        pubg: "تفاصيل عن شحن لعبة ببجي. <br><a href='#'>لشحن ببجي اضغط هنا</a>",
+        teach: "تفاصيل عن تعليم إنشاء المواقع. <br><a href='#'>لتعليم إنشاء المواقع اضغط هنا</a>",
+    };
+
+    popupText.innerHTML = content[type];
+    popup.style.display = "flex";
+}
+
+function closePopup() {
+    const popup = document.getElementById("popup");
+    popup.style.display = "none";
+}

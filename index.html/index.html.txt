@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="ar">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tyson Store</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="script.js" defer></script>
+</head>
+<body>
+    <header>
+        <h1>убЭШ№Ч Шпу нэ Tyson Store</h1>
+    </header>
+    <main>
+        <div class="options">
+            <button onclick="openPopup('web')">ХфдЧС уцЧок</button>
+            <button onclick="openPopup('platform')">ЪвцЯ ЧсуфеЧЪ</button>
+            <button onclick="openPopup('pubg')">дЭф скШЩ ШШЬэ</button>
+            <button onclick="openPopup('teach')">Ъксэу ХфдЧС ЧсуцЧок</button>
+        </div>
+        <div class="popup" id="popup">
+            <div class="popup-content" id="popup-content">
+                <button class="close" onclick="closePopup()">X</button>
+                <div id="popup-text"></div>
+            </div>
+        </div>
+    </main>
+</body>
+</html>
